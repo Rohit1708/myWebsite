@@ -7,11 +7,11 @@
 	$to = "rs.rohit1708@gmail.com";
 	$subject = $_POST['subject'];
 	$email = $_POST['email'];
-	$txt = $_POST['message'];
+	$message = $_POST['message'];
 	$headers = "From: " .$email . "\r\n" .
 	"CC: somebodyelse@example.com";
 
-	mail($to,$subject,$txt,$headers);
+	mail($to,$subject,$message,$headers);
 
 	header("Location: contact.html");
 
